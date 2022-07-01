@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+    border: 0;
+    transition: all 0.2s linear;
+}
+.container{
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background: rgb(41, 41, 41);
+    position: relative;
+}
+.container .btn{
+    background: rgb(255, 196, 34);
+color: #fff;
+border-radius: 0.5rem;
+height: 3rem;
+width: 12rem;
+font-size: 1rem;
+cursor: pointer;
+}
+.container .btn:hover{
+background: none;
+border: 0.1rem solid rgb(255, 196, 34);
+}
+.cookies-box{
+    position: absolute;
+    top: 13rem;  left: -300rem; /* */
+    background: rgb(255, 196, 34);
+    border-radius: 0.5rem;
+    height: 22.5rem;
+    width: 15rem;
+    text-align: center;
+    color: #fff;
+
+}
+.cookies-box.active{
+    left: 3rem;
+}
+.cookies-box h3{
+font-size: 1.2rem;
+padding: 1.5rem 0;
+}
+.cookies-box p{
+    font-size: 1rem;
+    padding: 0 0.9rem;
+}
+.cookies-box img{
+    width: 40%;
+    animation: image 10s linear infinite;
+}
+@keyframes image{
+0%{
+    transform: rotate(360deg);
+}
+}
+.cookies-box .privacy{
+color: #000;
+padding:0.9rem 0;
+}
+.cookies-box .btn-2{
+    background: none;
+    color: #fff;
+    border: 0.1rem solid #fff;
+    border-radius: 0.5rem;
+    width: 10rem;
+    height: 2.1rem;
+    font-size: 1rem;
+    margin: 0.9rem 0;
+    cursor: pointer;
+
+}
+.cookies-box .btn-2:hover{
+background: rgb(41, 41, 41);
+border: 0.1rem solid rgb(255, 196, 34);
+}
+.cookies-box .clos{
+position: absolute;
+top: 0.4rem; right: 0.5rem;
+font-size: 2rem;
+color: #fff;
+cursor: pointer;
+font-weight: bold;
+}
+.cookies-box .clos:hover{
+transform: rotate(45deg);
+color: #000;
+}
